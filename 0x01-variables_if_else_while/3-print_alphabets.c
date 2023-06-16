@@ -14,10 +14,10 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	while (n <= 'Z')
+	while (m <= 'Z')
 	{
 		putchar(m);
-		n++;
+		m++;
 	}
 	putchar('\n');
 	return (0);
