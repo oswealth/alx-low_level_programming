@@ -1,6 +1,6 @@
 #include <stdio.h>
  /**
-  * main - main block
+  * main - Entry point
   * Description: Print all possible combinations of two digits
   * Numbers must be separated by commas and a space
   * 01 and 10 are considered as the same combination of the two digits.
@@ -11,7 +11,6 @@
   * You are not allowed to use any variable of type `char`.
   * Return: 0
   */
-
 int main(void)
 {
 	int x, y;
