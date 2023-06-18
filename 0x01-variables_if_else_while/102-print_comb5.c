@@ -2,6 +2,7 @@
 
  /**
   * main - Entry point
+  *
   * Description: Print all possible combinations of two two-digit numbers.
   * Numbers should range from 0 to 99, digits 1 should be printed as 01.
   * `00 01` and `01 00` are considered as the same combination
