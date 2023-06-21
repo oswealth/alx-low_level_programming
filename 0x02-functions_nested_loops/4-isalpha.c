@@ -3,7 +3,8 @@
  /**
   * _isalpha - Check if the character is an alphabetic character.
   * @c: type int character
-  *
+  *Description: function that checks for alphabetic character
+
   * Returns 1 if c is a letter, lowercase or uppercase, 0 otherwise
   */
 

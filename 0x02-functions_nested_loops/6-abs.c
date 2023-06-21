@@ -4,6 +4,8 @@
   * _abs - computes the absolute value of an integer
   * @n: the int to check
   *
+  * Description: absolute value of an integer
+  *
   * Return: the absolute value of int
   */
 
