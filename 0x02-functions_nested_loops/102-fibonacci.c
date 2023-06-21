@@ -8,22 +8,24 @@
  *
  * Return: 0
  */
-
 int main(void)
 {
-	int i = 1;
-	int total = 0;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	while (i < 1024)
+	for (count = 0; count < 50; count++)
 	{
-		if (i % 3 == 0)
-			total += i;
-		else if (i % 5 == 0)
-			total += i;
+		sum = fib1 + fib2;
+		printf("%lu", sum);
 
-		i++;
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	printf("%d\n", total);
 
 	return (0);
 }
