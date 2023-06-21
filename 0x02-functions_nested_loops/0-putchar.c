@@ -5,7 +5,6 @@
  * Description: You are not allowed to include standard libraries
  * Return: Always 0
  */
-
 int main(void)
 {
 	_putchar('_');
