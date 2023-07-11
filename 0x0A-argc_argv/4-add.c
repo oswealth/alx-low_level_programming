@@ -4,13 +4,10 @@
 #include <string.h>
 
 /**
- * main - Prints the addition of positive numbers,
- *        followed by a new line.
- * @argc: The number of arguments passed to the program.
- * @argv: An array of pointers to the arguments.
+ * check_num - checks if a string contains only digits
+ * @str: the string to check
  *
- * Return: If one of the numbers contains symbols that are non-digits - 1.
- *         Otherwise - 0.
+ * Return: 1 if the string contains only digits, 0 otherwise
  */
 
 int check_num(char *str)
@@ -19,14 +16,15 @@ int check_num(char *str)
 	unsigned int count;
 
 	count = 0;
-	while (count < strlen(str)) /*count string*/
-		{
+	while (count < strlen(str))
+		;
+	{
 			if (!isdigit(str[count])) /*check if str there are digit*/
 			{
 				return (0);
 			}
 			count++;
-		}
+	}
 	return (1);
 }
 
