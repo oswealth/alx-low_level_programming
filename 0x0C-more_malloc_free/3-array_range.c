@@ -13,10 +13,8 @@
 
 int *array_range(int min, int max)
 {
-	int *arr;
+	int *ptr;
 	int j, range;
-
-	range = 0;
 
 	/* check for invalid arguments */
 	if (min > max)
@@ -26,15 +24,13 @@ int *array_range(int min, int max)
 	range = max -  min + 1;
 
 	/* allocate memory for the array */
-	arr = malloc(range * sizeof(int));
-	if (arr == NULL)
+	ptr = malloc(sizeof(int) * range);
+	if (ptr == NULL)
 		return (NULL);
 
 	/* fill the array with values from min to max */
-	for (j = 0; j < len; j++)
-	{
-		*(arr + j) = min + j;
-	}
+	for (j = 0; min <= max; j++)
+		ptr[j] = min++;
 
-	return (arr);
+	return (ptr);
 }
