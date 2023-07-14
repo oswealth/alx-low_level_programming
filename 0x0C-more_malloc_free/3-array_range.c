@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	/* calculate the length of the array */
-	range = ((max + 1) min - 1);
+	range = max -  min + 1;
 
 	/* allocate memory for the array */
 	arr = malloc(range * sizeof(int));
