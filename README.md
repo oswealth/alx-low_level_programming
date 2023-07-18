@@ -1,1 +1,1 @@
- C programming for my Alx SE program
+C programming projects for my Alx SE program
