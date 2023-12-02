@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_set - Adds an element to the hash table
  * @ht: The hash table you want to add or update the key/value to
@@ -8,7 +7,6 @@
  *
  * Return: 1 if it succeeded, 0 otherwise
  */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
@@ -19,7 +17,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
-
 	tmp = ht->array[index];
 	while (tmp != NULL)
 	{
@@ -28,9 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(tmp->value);
 			tmp->value = strdup(value);
 			if (tmp->value == NULL)
-			{
 				return (0);
-			}
 			return (1);
 		}
 		tmp = tmp->next;
