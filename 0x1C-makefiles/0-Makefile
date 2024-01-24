@@ -1,2 +1,4 @@
-all : main.c school.c
+# This is a MakeFile
+
+all:
 	gcc main.c school.c -o school
