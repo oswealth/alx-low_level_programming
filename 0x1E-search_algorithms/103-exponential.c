@@ -63,6 +63,7 @@ int binary_search(int *array, size_t size, int value)
 int exponential_search(int *array, size_t size, int value)
 {
 	size_t bound = 1;
+	int result;
 
 	if (array == NULL || size == 0)
 		return (-1);
@@ -76,6 +77,13 @@ int exponential_search(int *array, size_t size, int value)
 				array[bound]);
 		bound *= 2;
 	}
-	return (binary_search(array + bound / 2, min(bound,
-					size) - bound / 2, value) + bound / 2);
+	bound = min(bound / 2, size - 1);
+
+	result = binary_search(array + bound, min(bound * 2,
+				size) - bound, value);
+	if (result == -1)
+	{
+		return (-1);
+	}
+	return (result + bound);
 }
