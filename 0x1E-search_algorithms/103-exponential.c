@@ -12,11 +12,11 @@ int min(int a, int b)
 	return (a < b ? a : b);
 }
 
+
 /**
  * binary_search - Helper function to perform binary search
  * @array: Pointer to the first element of the array to search in
- * @left: The starting index of the subarray to search
- * @right: The ending index of the subarray to search
+ * @size: The number of elements in the array
  * @value: Value to search for
  *
  * Return: Index where value is located, or -1 if value is not present
